@@ -1,0 +1,47 @@
+{
+  "name": "@picoads/eliza-plugin",
+  "version": "0.1.0",
+  "description": "Eliza v2 plugin for picoads — the micro ad network for AI agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "plugin",
+    "elizaos",
+    "advertising",
+    "ai-agents",
+    "picoads",
+    "ad-network",
+    "x402",
+    "eip-191"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@elizaos/core": "^1.7.2",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@elizaos/core": "^1.7.2",
+    "@types/node": "^25.4.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "viem": "^2.21.0",
+    "vitest": "^3.0.0"
+  }
+}
