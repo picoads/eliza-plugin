@@ -32,6 +32,19 @@
     "eip-191"
   ],
   "license": "MIT",
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {
+      "EVM_PRIVATE_KEY": {
+        "type": "string",
+        "description": "Agent wallet private key for EIP-191 signing and x402 payments"
+      },
+      "PICOADS_API_URL": {
+        "type": "string",
+        "description": "picoads API URL (defaults to https://picoads.xyz)"
+      }
+    }
+  },
   "peerDependencies": {
     "@elizaos/core": "^1.7.2",
     "viem": "^2.21.0"
